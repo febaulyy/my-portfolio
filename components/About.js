@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className={styles.textContent}>
             <h1>Hello!</h1>
-            <h2>I'm <span className={styles.highlight}> Sheila Oriza </span></h2>
+            <h2>I&apos;m <span className={styles.highlight}> Sheila Oriza </span></h2>
             <h3>Fashion Designer</h3>
             <div className={styles.buttons}>
               {/* Button Actions */}
