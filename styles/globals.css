@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Animasi muncul dari atas */
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-down {
+  animation: slide-down 0.8s ease forwards;
+}
+
+/* Animasi ketikan */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 47%;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { border-right-color: transparent; }
+  50% { border-right-color: white; }
+}
+
+.typewriter {
+  font-family: 'Courier', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  width: 0;
+  animation: typing 3.7s steps(40, end) forwards, blink 0.80s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Menggeser sedikit ke bawah saat muncul */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards; /* Durasi animasi dan efek easing */
+}
+
+.transition-transform {
+  transition: transform 0.3s ease; /* Transisi untuk transformasi */
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05); /* Efek skala saat hover */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
