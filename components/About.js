@@ -6,7 +6,7 @@ const About = () => {
     <div className={styles.aboutMeSection} id="about"> 
       <div className={styles.container}>
         {/* About Me Content */}
-        <div className={styles.aboutMeContent}>
+        <div className={`${styles.aboutMeContent} ${styles.flexResponsive}`}>
           <div className={styles.image}>
             <Image 
               src="/shap.jpg" 
@@ -18,7 +18,7 @@ const About = () => {
           </div>
           <div className={styles.textContent}>
             <h1>Hello!</h1>
-            <h2>I&apos;m <span className={styles.highlight}> Sheila Oriza </span></h2>
+            <h2>I&apos;m <span className={styles.highlight}>Sheila Oriza</span></h2>
             <h3>Fashion Designer</h3>
             <div className={styles.buttons}>
               {/* Button Actions */}
@@ -28,14 +28,14 @@ const About = () => {
 
         {/* About Me Details */}
         <div className={styles.aboutMeDetails}>
-          <h2>About Me? </h2>
-          <p>Fashion for me is a powerful form of self-expression, and I want everyone to feel that uniqueness.</p>
+          <h2>About Me</h2>
+          <p>Fashion bagi saya adalah bentuk ekspresi diri yang kuat, dan saya ingin semua orang merasakan keunikan tersebut.</p>
           <ul>
             <li><strong>Name:</strong> Sheula Oriza Pramestiyo</li>
             <li><strong>Date of Birth:</strong> April 21, 2008</li>
             <li><strong>Address:</strong> Kemayoran Gempol</li>
-            <li><strong>Email:</strong> zazasheila@gmail.com </li>
-            <li><strong>Phone:</strong>  +62 888-000-2118</li>
+            <li><strong>Email:</strong> zazasheila@gmail.com</li>
+            <li><strong>Phone:</strong> +62 888-000-2118</li>
           </ul>
         </div>
       </div>

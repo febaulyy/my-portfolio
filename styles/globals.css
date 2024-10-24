@@ -36,7 +36,7 @@ body {
     width: 0;
   }
   100% {
-    width: 47%;
+    width: 47%; /* Sesuaikan ukuran sesuai teks yang ingin di-animasi */
   }
 }
 
@@ -87,5 +87,5 @@ body {
 }
 
 .animate-bounce {
-  animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }

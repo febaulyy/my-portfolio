@@ -106,3 +106,44 @@
     padding: 10px 20px;
     border-radius: 25px;
 }
+
+/* Media Queries untuk Responsif di Mobile */
+@media (max-width: 768px) {
+    .aboutMeContent {
+        flex-direction: column; /* Mengubah arah flex menjadi kolom */
+        align-items: center; /* Mengatur pusat secara horizontal */
+        text-align: center; /* Rata tengah untuk teks */
+    }
+
+    .image {
+        margin-right: 0; /* Menghilangkan margin kanan */
+        margin-bottom: 20px; /* Menambahkan margin bawah */
+        width: 200px; /* Menyesuaikan lebar foto */
+        height: 200px; /* Menyesuaikan tinggi foto */
+    }
+
+    .textContent h1 {
+        font-size: 28px; /* Mengubah ukuran font untuk judul */
+    }
+
+    .textContent h2 {
+        font-size: 24px; /* Mengubah ukuran font untuk subjudul */
+    }
+
+    .textContent h3 {
+        font-size: 20px; /* Mengubah ukuran font untuk h3 */
+    }
+
+    .aboutMeDetails h2 {
+        font-size: 22px; /* Mengubah ukuran font untuk detail */
+    }
+
+    .aboutMeDetails p,
+    .aboutMeDetails ul li {
+        font-size: 16px; /* Mengubah ukuran font untuk paragraf dan list */
+    }
+
+    .button {
+        font-size: 14px; /* Mengubah ukuran font untuk tombol */
+    }
+}
